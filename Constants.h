@@ -1,0 +1,26 @@
+#pragma once
+
+#define RAD2DEG			57.2957795f
+#define DEG2RAD			0.0174532925f
+
+//Screen dimensions.
+#define SCREEN_WIDTH	480//512
+#define SCREEN_HEIGHT	320//416	
+
+enum SCREEN_STATE
+{
+	NOCHANGE = -1,
+	MENU = 0,
+	LEVEL1,
+	LEVEL2,
+	GAMEOVER,
+	SCORES
+};
+
+extern SCREEN_STATE nextScreen;
+
+//Terrain
+#define TERRAIN_SIZE	260
+#define WATER_HEIGHT	2.0f
+#define MAX_HEIGHT		30.0f
+#define SCALE_FACTOR    8.5f
